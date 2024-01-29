@@ -1,0 +1,25 @@
+Imagem salva temporariamente com sucesso: C:\Users\Gustavo Lacerda\Downloads\seleniumpy\assets\temp_image.png
+Erro durante a interação: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.71)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61D172142+3514994]
+	(No symbol) [0x00007FF61CD90CE2]
+	(No symbol) [0x00007FF61CC376AA]
+	(No symbol) [0x00007FF61CC10AFD]
+	(No symbol) [0x00007FF61CCACB1B]
+	(No symbol) [0x00007FF61CCC218F]
+	(No symbol) [0x00007FF61CCA5D93]
+	(No symbol) [0x00007FF61CC74BDC]
+	(No symbol) [0x00007FF61CC75C64]
+	GetHandleVerifier [0x00007FF61D19E16B+3695259]
+	GetHandleVerifier [0x00007FF61D1F6737+4057191]
+	GetHandleVerifier [0x00007FF61D1EE4E3+4023827]
+	GetHandleVerifier [0x00007FF61CEC04F9+689705]
+	(No symbol) [0x00007FF61CD9C048]
+	(No symbol) [0x00007FF61CD98044]
+	(No symbol) [0x00007FF61CD981C9]
+	(No symbol) [0x00007FF61CD888C4]
+	BaseThreadInitThunk [0x00007FFDEACF7344+20]
+	RtlUserThreadStart [0x00007FFDEAE626B1+33]
+
