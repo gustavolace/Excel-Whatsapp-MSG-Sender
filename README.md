@@ -19,5 +19,6 @@ O sistema oferece a capacidade de:
 - Planilha Completa.
 
 ![Planilha Completa](https://github.com/gustavolace/Whatsapp-Automation-from-excel/assets/99536403/77730f35-fcbf-46f5-bd0b-1510af6a1210)
+![image](https://github.com/gustavolace/Whatsapp-Automation-from-excel/assets/99536403/a62553a2-017d-441a-a715-1fd38dc71471)
 
 Este projeto oferece uma solução prática para automação do WhatsApp, evitando as complexidades associadas à utilização da API oficial. Certifique-se de ajustar os caminhos das imagens conforme necessário.
