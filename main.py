@@ -10,8 +10,10 @@ from PIL import ImageGrab
 import pandas as pd
 import time
 import os 
+import sys
 
-dir_atual = os.path.dirname(os.path.abspath(__file__))
+script_path = sys.argv[0]
+dir_atual = os.path.dirname(os.path.abspath(script_path))
 xml_file = os.path.join(dir_atual, 'vba.xlsm')
 
 appdata_dir = os.getenv('APPDATA')
@@ -39,6 +41,7 @@ def find_sheet_shapes():
 
         print("Imagem salva temporariamente com sucesso:", temp_image_path)
 
+    print(ws.Shapes(3))
     return text
 
 def find_contacts():
@@ -63,7 +66,7 @@ def make_url():
 make_url()
 
 options = webdriver.ChromeOptions()
-#options.add_argument("--headless")
+options.add_argument("--headless")
 options.add_argument(f"--user-data-dir={chrome_profile_dir}")
 user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.50 Safari/537.36'
 options.add_argument(f'user-agent={user_agent}')
@@ -76,9 +79,9 @@ def navigator_web_driver(var):
     try:
 
         if have_img is True:
-            attach_icon = WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.CSS_SELECTOR, "span[data-icon='attach-menu-plus']")))
+            attach_icon = WebDriverWait(driver, 40).until(EC.presence_of_element_located((By.CSS_SELECTOR, "span[data-icon='attach-menu-plus']")))
             attach_icon.click()
-            input_file = WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.CSS_SELECTOR, "input[accept='image/*,video/mp4,video/3gpp,video/quicktime']")))
+            input_file = WebDriverWait(driver, 40).until(EC.presence_of_element_located((By.CSS_SELECTOR, "input[accept='image/*,video/mp4,video/3gpp,video/quicktime']")))
             input_file.send_keys(rf"{os.path.abspath(temp_image_path)}\temp_image.png")
 
             WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, "span[data-icon='send']")))
