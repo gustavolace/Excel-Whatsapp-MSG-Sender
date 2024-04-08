@@ -29,6 +29,16 @@ O código de automação do WhatsApp a partir do Excel tem como objetivo contorn
   ![image](https://github.com/gustavolace/Whatsapp-Automation-from-excel/assets/99536403/a62553a2-017d-441a-a715-1fd38dc71471)
 
 ## Uso
+Antes de mais nada, se atente aos arquivos compactados, seria impossível enviar o arquivo inteiro ao GitHub, extraia ambos os main(s).
+
+Selecione todos e aperte para extrair aqui <br>
+Mova o arquivo extraído para a pasta raiz
+
+![image](https://github.com/gustavolace/Excel-Whatsapp-MSG-Sender/assets/99536403/f292a377-95f5-40fd-adb3-4222a9ecca27)
+![image](https://github.com/gustavolace/Excel-Whatsapp-MSG-Sender/assets/99536403/eacd20ec-0127-43c0-afb4-8bf78bb6f245)
+
+
+
 O código conta com uma série de ações para adquirir as informações do Excel e após isso enviá-las pelo navegador. Para iniciar sua configuração, abra o arquivo `settings.exe`. Este abrirá o navegador; escaneie o código em até 30 segundos e, após isso, feche normalmente. Está tudo pronto para usar.
 
 Aviso: os executáveis devem estar na mesma pasta da planilha para o funcionamento. Não faça alterações na estrutura geral da planilha, exceto a adição ou remoção de imagens, textos ou contatos.
